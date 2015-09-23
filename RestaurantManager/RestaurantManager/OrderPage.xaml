@@ -8,6 +8,7 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
         <Grid.RowDefinitions>
             <RowDefinition Height="0.2*"/>
             <RowDefinition Height="0.1*"/>
@@ -20,9 +21,20 @@
             <ColumnDefinition Width="0.25*"/>
             <ColumnDefinition Width="0.25*"/>
         </Grid.ColumnDefinitions>
+        <ListView Grid.Column="0" Grid.Row="1" Grid.RowSpan="3" Background="#FFF5ECEC">
+            
+        </ListView>
+        <ListView Grid.Column="2" Grid.Row="2" Grid.RowSpan="2" Background="#FFB3B6FF">
+
+        </ListView>
         <TextBlock Grid.Row="1" Grid.Column="1" Text="Special Requests:"/>
         <TextBlock Grid.Row="1" Grid.Column="2" Text="Order Items:"/>
         <TextBlock Grid.Row="4" Grid.Column="0" TextAlignment="Center" VerticalAlignment="Center" Text="**Add to Order**"/>
         <TextBlock Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2" TextAlignment="Center" VerticalAlignment="Center" Text="**Submit Order**"/>
+        <AppBar Grid.ColumnSpan="3">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
+                <AppBarButton Icon="Home" Label="Home" Click="AppBarButton_Click" />
+            </StackPanel>
+        </AppBar>
     </Grid>
 </Page>
