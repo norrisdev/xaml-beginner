@@ -29,8 +29,9 @@
         </ListView>
         <TextBlock Grid.Row="1" Grid.Column="1" Text="Special Requests:"/>
         <TextBlock Grid.Row="1" Grid.Column="2" Text="Order Items:"/>
-        <TextBlock Grid.Row="4" Grid.Column="0" TextAlignment="Center" VerticalAlignment="Center" Text="**Add to Order**"/>
-        <TextBlock Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2" TextAlignment="Center" VerticalAlignment="Center" Text="**Submit Order**"/>
+        <Button Content="Add to Order" HorizontalAlignment="Center" Grid.Row="4" Grid.Column="0"/>
+        <Button Content="Submit Order" HorizontalAlignment="Center" Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2"/>
+        
         <AppBar Grid.ColumnSpan="3">
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
                 <AppBarButton Icon="Home" Label="Home" Click="AppBarButton_Click" />
